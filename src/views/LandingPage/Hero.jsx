@@ -31,7 +31,7 @@ const Hero = () => {
             <HeroHeaderText>¡SEAN BIENVENIDOS!</HeroHeaderText>
             <HeroImage src={collage} showSidebar={showSidebar} />
             <HeroHeaderSubTextP>
-              El GRUPO AZNAR se fundó en 1999, en la Ciudad de México.
+              El <b>GRUPO AZNAR</b> se fundó en 1999, en la Ciudad de México.
               <HeroTextSpan>
                 Nos dedicamos a crear soluciones a la medida dependiendo de las
                 necesidades de cada cliente.

@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-export const HeroContainer = styled.main`
+import bg from "/assets/img/Navbar/logo.webp";
+export const NotFoundContainer = styled.main`
   width: 100%;
   margin: 0;
   text-align: center;
 `;
-export const HeroContainerBg = styled.section`
+export const NotFoundContainerBg = styled.section`
   padding: 80px 0;
-  background-color: #fffefc;
-  max-width: 100%;
-  margin: 0 auto;
-  height: auto;
-  width: 100vw;
+  background-image: url(${bg}); /* Reemplaza '/path/to/your/image.jpg' con la ruta de tu imagen de fondo */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 `;
-export const HeroContent = styled.div`
+export const NotFoundContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +32,7 @@ export const HeroContent = styled.div`
     gap: 0;
   }
 `;
-export const HeroLogo = styled.img`
+export const NotFoundLogo = styled.img`
   width: 300px;
   overflow-clip-margin: content-box;
   overflow: clip;
@@ -39,40 +40,32 @@ export const HeroLogo = styled.img`
     width: 150px;
   }
 `;
-export const HeroTextContainer = styled.div`
+export const NotFoundTextContainer = styled.div`
   width: 500px;
   @media (max-width: 650px) {
     text-align: center;
     width: 100%;
   }
 `;
-export const HeroHeaderText = styled.h1`
-  font-size: 3rem;
-  color: black;
+export const NotFoundHeaderText = styled.h1`
+  font-size: 2rem;
+  color: red;
   font-weight: bold;
   white-space: nowrap;
-  @media (max-width: 1000px) {
-    font-size: 2rem;
-  }
 `;
-export const HeroHeaderSubTextP = styled.p`
+export const NotFoundHeaderSubTextP = styled.h2`
   font-size: 1.5rem;
-  color: #1e1e1e;
+  color: red;
   font-weight: semibold;
 `;
-export const HeroTextSpan = styled.span`
-  font-size: 1rem;
-  font-weight: semibold;
-  display: block;
-  color: #1e1e1e;
-`;
-export const HeroButton = styled.a`
+
+export const NotFoundButton = styled(Link)`
   margin: 0 auto;
   margin-top: 20px;
   display: table;
   cursor: pointer;
 `;
-export const HeroContentButton = styled.div`
+export const NotFoundContentButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,7 +80,7 @@ export const HeroContentButton = styled.div`
     color: #cfd5dc;
   }
 `;
-export const HeroSpanContentButton = styled.span`
+export const NotFoundSpanContentButton = styled.span`
   line-height: 20px;
   display: flex;
   font-weight: bold;
@@ -95,11 +88,11 @@ export const HeroSpanContentButton = styled.span`
   align-items: center;
   justify-content: center;
 `;
-export const HeroImage = styled.img`
-  width: 100vw;
-  height: auto;
+export const NotFoundImage = styled.img`
+  width: 60vw;
   display: block;
-  margin-left: -470px;
+  margin-left: -250px;
+  margin-top: 100px;
   visibility: ${(props) =>
     props.showSidebar
       ? "hidden"
@@ -107,49 +100,49 @@ export const HeroImage = styled.img`
 
   @media (max-width: 768px) {
     width: 100vw;
-    height: auto;
+
     display: block;
-    margin-rigth: 1500px;
+    margin-right: 1500px;
   }
   @media (max-width: 800px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -150px;
   }
   @media (max-width: 720px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -112px;
   }
   @media (max-width: 640px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -35px;
   }
   @media (max-width: 600px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -30px;
   }
   @media (max-width: 420px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -20px;
   }
   @media (max-width: 390px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -20px;
   }
   @media (max-width: 370px) {
     width: 100vw;
-    height: auto;
+
     display: block;
     margin-left: -20px;
   }

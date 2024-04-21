@@ -24,9 +24,7 @@ const GlobalStyle = createGlobalStyle`
   main{
     display:block;
   }
-  section{
-    display:block;
-  }
+  
   div{
     display:block;
   }

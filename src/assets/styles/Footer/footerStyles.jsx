@@ -63,3 +63,8 @@ export const FooterTextTitle = styled.h2`
   font-size: 2rem;
   margin: 10px; /* Elimina el margen predeterminado */
 `;
+export const FooterESDMX = styled.img`
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+`;

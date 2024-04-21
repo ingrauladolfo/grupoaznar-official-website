@@ -8,18 +8,20 @@ import {
 } from "react-router-dom";
 import { routeToTitle, routeAliases } from "../assets/data/routeTitles";
 import Header from "../components/global/Header";
-import LandingPage from "../views/LandingPage/LandingPage";
-import About from "../views/LandingPage/About";
-import Services from "../views/LandingPage/Services";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import ControlPlagas from "../views/ControlPlagas/index";
-import SolucionesMedida from "../views/SolucionesMedida/index";
-import LoQueNosAvala from "../views/ControlPlagas/LoQueNosAvala/LoQueNosAvala";
-import Contact from "../views/LandingPage/Contact";
-import ServiciosTecnicos from "../views/ServiciosTecnicos";
-import EquipacionCocina from "../views/EquipacionCocina";
-
+import {
+  About,
+  Contact,
+  ControlPlagas,
+  EquipacionCocina,
+  LandingPage,
+  LoQueNosAvala,
+  NotFound,
+  Services,
+  ServiciosTecnicos,
+  SolucionesMedida,
+} from "../views/index";
 const MainRoutes = () => {
   useEffect(() => {
     // Función para manejar cambios en la ubicación y actualizar el título
@@ -75,9 +77,10 @@ const MainRoutes = () => {
           path="/control-plagas/lo-que-nos-avala"
           element={<LoQueNosAvala />}
         />
+        <Route path="/not-found" element={<NotFound />} />
         <Route path="/servicios-tecnicos" element={<ServiciosTecnicos />} />
         <Route path="/equipacion-cocina" element={<EquipacionCocina />} />
-        {/* <Route path="*" element={<Navigate to="/not-found" replace />} /> */}
+        <Route path="*" element={<Navigate to="/not-found" replace />} />
       </Routes>
       <Footer />
     </Router>

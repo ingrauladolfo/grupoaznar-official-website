@@ -9,7 +9,6 @@ import {
   SidebarNavText,
   SidebarTextContainer,
 } from "../../assets/styles/Sidebar/sidebarStyles";
-import { Link } from "react-router-dom";
 import sidebarData from "../../assets/data/sidebarData";
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);

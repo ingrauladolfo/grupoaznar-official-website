@@ -1,15 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faMap,
-  faPhone,
-  faUser,
-  faUserTie,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMap, faUser } from "@fortawesome/free-solid-svg-icons";
 import {
   ColumnWrapper,
+  FooterESDMX,
   FooterText,
   FooterTextTitle,
   FooterTextWrapper,
@@ -18,7 +13,7 @@ import {
   RightColumn,
 } from "../../assets/styles/Footer/footerStyles";
 import PhoneLink from "./phoneLink";
-
+import esdmx from "/assets/img/Footer/esdmx.webp";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -67,7 +62,7 @@ const Footer = () => {
         Todos los derechos reservados Grupo Aznar 1999 - {currentYear} &copy;
       </FooterText>
       <FooterText style={{ marginTop: "15px" }}>
-        Desarrollado por ESDMX
+        Desarrollado por ESDMX <FooterESDMX src={esdmx} alt="ESDMX Logo" />
       </FooterText>
     </FooterWrapper>
   );

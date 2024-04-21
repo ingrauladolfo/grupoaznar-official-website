@@ -22,7 +22,7 @@ const Navbar = () => {
       <NavbarNav>
         {isHome ? <Sidebar /> : <SidebarWebsite />}
         <NavbarTextContainer>Grupo Aznar</NavbarTextContainer>
-        <NavbarLogoButton exact to="/">
+        <NavbarLogoButton to="/">
           <NavbarLogo src={logo} alt="Grupo Aznar" />
         </NavbarLogoButton>
       </NavbarNav>
