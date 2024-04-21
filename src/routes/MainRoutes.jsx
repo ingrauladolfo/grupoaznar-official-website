@@ -77,10 +77,10 @@ const MainRoutes = () => {
           path="/control-plagas/lo-que-nos-avala"
           element={<LoQueNosAvala />}
         />
-        <Route path="/not-found" element={<NotFound />} />
+        <Route path="/404" element={<NotFound />} />
         <Route path="/servicios-tecnicos" element={<ServiciosTecnicos />} />
         <Route path="/equipacion-cocina" element={<EquipacionCocina />} />
-        <Route path="*" element={<Navigate to="/not-found" replace />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
       <Footer />
     </Router>
