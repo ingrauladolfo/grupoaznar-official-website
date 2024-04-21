@@ -77,7 +77,6 @@ const MainRoutes = () => {
         />
         <Route path="/servicios-tecnicos" element={<ServiciosTecnicos />} />
         <Route path="/equipacion-cocina" element={<EquipacionCocina />} />
-        {/* <Route path="/equipacion-cocina" element={<SolucionesMedida />} /> */}
         {/* <Route path="*" element={<Navigate to="/not-found" replace />} /> */}
       </Routes>
       <Footer />
